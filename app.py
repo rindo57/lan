@@ -20,4 +20,4 @@ app.register_blueprint(user_bp, url_prefix='/api/users')
 app.register_blueprint(exchange_bp, url_prefix='/api/exchanges')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8083, debug=True)
